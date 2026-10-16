@@ -32,8 +32,6 @@ zig build run -Doptimize=ReleaseFast
 zig build run
 ```
 
-
 ## Video
 
-<!-- https://youtu.be/lPICq7ejL1M -->
-
+[Ver video en YouTube](https://youtu.be/lPICq7ejL1M)
