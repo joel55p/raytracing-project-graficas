@@ -24,7 +24,7 @@ pub const Cubo = struct {
         var eje_salida: usize = 0;
         var signo_salida: f32 = 1;
 
-        // slab method  implementado en ejes: x, y, z
+        // slab method  implementado con ayuda de IA en ejes: x, y, z
         for (0..3) |i| {
             if (@abs(d[i]) < 1e-8) {
                 if (o[i] < bmin[i] or o[i] > bmax[i]) return null;
@@ -54,6 +54,7 @@ pub const Cubo = struct {
             }
         }
 
+        //Implementado con IA, para determinar que cara se golpeo con la normal.
         const desde_afuera = tmin_val > 0;
         const t = if (desde_afuera) tmin_val else tmax_val;
         if (t < 0) return null;
